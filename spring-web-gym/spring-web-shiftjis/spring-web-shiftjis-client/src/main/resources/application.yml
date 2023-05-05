@@ -1,0 +1,7 @@
+server:
+  servlet:
+    encoding:
+      charset: Shift_JIS
+logging:
+  level:
+    org.springframework.web.client.RestTemplate: DEBUG
