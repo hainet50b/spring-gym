@@ -1,0 +1,5 @@
+### Produce a message
+POST http://localhost:8080/produce
+Content-Type: text/plain
+
+Hello Spring AMQP!
