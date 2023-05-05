@@ -7,7 +7,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 @Component
-@RabbitListener(queues = "spring-amqp-basic")
+@RabbitListener(queues = QueueConfig.SPRING_AMQP_BASIC)
 public class SpringAmqpBasicConsumer {
 
     private static final Logger log = LoggerFactory.getLogger(SpringAmqpBasicConsumer.class);
