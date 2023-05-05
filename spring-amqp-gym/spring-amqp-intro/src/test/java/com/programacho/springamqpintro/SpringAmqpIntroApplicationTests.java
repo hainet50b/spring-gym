@@ -1,10 +1,10 @@
-package com.programacho.springamqpbasic;
+package com.programacho.springamqpintro;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringAmqpBasicApplicationTests {
+class SpringAmqpIntroApplicationTests {
 
     @Test
     void contextLoads() {

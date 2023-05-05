@@ -1,13 +1,13 @@
-package com.programacho.springamqpbasic;
+package com.programacho.springamqpintro;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringAmqpBasicApplication {
+public class SpringAmqpIntroApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringAmqpBasicApplication.class, args);
+        SpringApplication.run(SpringAmqpIntroApplication.class, args);
     }
 
 }

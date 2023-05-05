@@ -1,4 +1,4 @@
-package com.programacho.springamqpbasic;
+package com.programacho.springamqpintro;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class SpringAmqpBasicProducer {
+public class SpringAmqpIntroProducer {
 
     private final RabbitTemplate rabbitTemplate;
 
     private final Queue queue;
 
-    public SpringAmqpBasicProducer(
+    public SpringAmqpIntroProducer(
             RabbitTemplate rabbitTemplate,
             Queue queue) {
         this.rabbitTemplate = rabbitTemplate;
