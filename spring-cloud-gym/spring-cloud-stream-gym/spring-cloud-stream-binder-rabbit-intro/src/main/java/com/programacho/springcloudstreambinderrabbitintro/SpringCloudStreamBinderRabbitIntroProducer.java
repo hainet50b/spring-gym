@@ -1,9 +1,9 @@
 package com.programacho.springcloudstreambinderrabbitintro;
 
 import org.springframework.cloud.stream.function.StreamBridge;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 public class SpringCloudStreamBinderRabbitIntroProducer {
 
     private final StreamBridge streamBridge;
@@ -13,6 +13,6 @@ public class SpringCloudStreamBinderRabbitIntroProducer {
     }
 
     public void log(String message) {
-        streamBridge.send("log-in-0", message);
+        streamBridge.send("log-out-0", message);
     }
 }
