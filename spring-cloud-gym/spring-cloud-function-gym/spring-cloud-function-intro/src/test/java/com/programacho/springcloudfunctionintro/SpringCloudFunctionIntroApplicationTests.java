@@ -1,10 +1,10 @@
-package com.programacho.springcloudfunctionbasic;
+package com.programacho.springcloudfunctionintro;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringCloudFunctionBasicApplicationTests {
+class SpringCloudFunctionIntroApplicationTests {
 
     @Test
     void contextLoads() {
