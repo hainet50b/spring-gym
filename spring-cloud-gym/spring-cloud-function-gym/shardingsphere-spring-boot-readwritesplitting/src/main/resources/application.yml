@@ -1,0 +1,33 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  shardingsphere:
+    datasource:
+      names: ds0,ds1
+      ds0:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: org.h2.Driver
+        url: jdbc:h2:mem:pmacho_db;mode=MySQL
+        username: sa
+        password:
+      ds1:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: org.h2.Driver
+        url: jdbc:h2:mem:protein_db;mode=MySQL
+        username: sa
+        password:
+    rules:
+      readwrite-splitting:
+        data-sources:
+          pmacho-ds:
+            static-strategy:
+              write-data-source-name: ds0
+              read-data-source-names:
+                - ds0
+                - ds1
+            load-balancer-name: pmacho-lb
+        load-balancers:
+          pmacho-lb:
+            type: ROUND_ROBIN

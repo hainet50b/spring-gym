@@ -1,0 +1,7 @@
+management:
+  tracing:
+    enabled: true
+    sampling:
+      probability: 0
+    propagation:
+      type: w3c

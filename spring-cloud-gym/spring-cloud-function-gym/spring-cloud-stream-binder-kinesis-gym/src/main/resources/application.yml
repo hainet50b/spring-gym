@@ -1,0 +1,18 @@
+#cloud:
+#  aws:
+#    credentials:
+#      access-key: TODO
+#      secret-key: TODO
+#    region: ap-northeast-1
+
+spring:
+  cloud:
+    function:
+      definition: produceLog
+    stream:
+      bindings:
+        produceLog-out-0:
+          destination: programacho
+          content-type: application/json
+          producer:
+            header-mode: none
